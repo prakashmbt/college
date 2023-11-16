@@ -51,7 +51,7 @@ public class DataUtil {
 			return 0.0f;
 		}
 	}
-	
+	 
 	public List<String> resultSetToListOfString(ResultSet resultSet,String key){
 		try {
 			String jsonString = resultSet.getString(key);
