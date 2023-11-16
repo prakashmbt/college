@@ -18,7 +18,7 @@ public class WebCORSConfig extends WebMvcConfigurerAdapter {
 				.allowedHeaders("Accept", "content-type", "Authorization", "X-Requested-With", 
 								"x-request-appCode", "x-request-userName", "x-request-sessionId",   
 								"x-request-ipAddress", "sessionId", "companyId", "referredBy")   
-				.exposedHeaders("content-type")  
+				.exposedHeaders("content-type", "Date")  
 				.allowCredentials(true).maxAge(3600);  
 
 	}   
