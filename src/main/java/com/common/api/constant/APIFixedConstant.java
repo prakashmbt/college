@@ -117,11 +117,11 @@ public class APIFixedConstant {
 	public static final String RE_APPLICATION_TYPE 	= "^[A-Z0-9_]+$"; 
 	  
 	/** Validation Type Constants */ 
-	public static final String VT_NUMBER 	= "number";   
-	public static final String VT_NAME  	= "name";     
-	public static final String VT_DATE  	= "date";     
-	public static final String VT_TIME  	= "time";    
-	public static final String VT_TYPE 		= "type";   
+	public static final String VT_NUMBER 	  = "number";   
+	public static final String VT_NAME  	  = "name";     
+	public static final String VT_DATE  	  = "date";     
+	public static final String VT_TIME  	  = "time";    
+	public static final String VT_TYPE 		  = "type";   
 	public static final String VT_DATE_TIME   = "dateTime";     
 	public static final String VT_PASSWORD	  = "password";   
 	public static final String VT_AUTO_GEN_ID = "autoGenerateId";
@@ -148,7 +148,6 @@ public class APIFixedConstant {
 	
 	/** Table Name Constants */ 
 	public static final String TABLE_STUDENTS 				= "tb_students";
-
   
 
 	/** Regular Expression Constants */ 

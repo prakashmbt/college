@@ -35,7 +35,6 @@ public class DepartmentServiceImpl extends APIFixedConstant implements Departmen
 		
 		mapper.addValue("id", id);
 		mapper.addValue("departmentName", departmentName);
-		System.out.println("Commit");
 		response = namedParameterJdbcTemplate.query(sql, mapper, new DepartmentRowMapper());
 		}catch(DataAccessException e) {
 			
