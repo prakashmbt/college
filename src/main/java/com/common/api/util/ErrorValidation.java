@@ -4,27 +4,43 @@ package com.common.api.util;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+<<<<<<< HEAD
+=======
 
+>>>>>>> parent of 37f2a23 (commit of dev)
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Component;
 import com.common.api.constant.APIFixedConstant;
+<<<<<<< HEAD
+=======
 import com.common.api.resource.DepartmentService;
 import com.common.api.response.Department;
+>>>>>>> parent of 37f2a23 (commit of dev)
 import com.common.api.resource.StudentService;
 import com.common.api.response.Student;
 
 @Component
 public class ErrorValidation extends APIFixedConstant {
+<<<<<<< HEAD
+	   @Autowired
+	   private StudentService studentDao;
+	   
+	   private Student student;
+=======
 	   
 	   @Autowired
 	   DepartmentService departmentService;
+>>>>>>> parent of 37f2a23 (commit of dev)
 	   
 	   @Autowired
 	   NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
+<<<<<<< HEAD
+=======
 	   @Autowired
 	   private StudentService studentDao;
+>>>>>>> parent of 37f2a23 (commit of dev)
 		
 	   private final List<String> errors = new ArrayList<>();
 	   
@@ -39,8 +55,11 @@ public class ErrorValidation extends APIFixedConstant {
 	    public List<String> getErrors() {
 	        return errors;
 	    }
+<<<<<<< HEAD
+=======
     
 	  
+>>>>>>> parent of 37f2a23 (commit of dev)
 	    
     public ErrorValidation validateInput(Optional<Integer> id, Optional<Object> input) {
  	
@@ -51,6 +70,11 @@ public class ErrorValidation extends APIFixedConstant {
             Integer idValue = id.get();
             if (idValue < 0) {
                 errorResponse.addError(INVALID_ID_FORMAT);
+<<<<<<< HEAD
+            }
+        }
+	    
+=======
             } 
         }
 	    
@@ -67,6 +91,7 @@ public class ErrorValidation extends APIFixedConstant {
     
         }	
 	    
+>>>>>>> parent of 37f2a23 (commit of dev)
          if(input.isPresent()){
         	input.ifPresent(inputValue -> {           
             
