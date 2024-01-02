@@ -27,7 +27,7 @@ public class ResponseConfig {
 
 	@Value("${INSERT_EXCEPTION_ERROR}")
 	public String insertExceptionError;
-
+	 
 	@Value("${UPDATE_EXCEPTION_ERROR}")
 	public String updateExceptionError;
 
